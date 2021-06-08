@@ -10,7 +10,6 @@ public class Main {
 }
 
 class Window extends JFrame {
-    private final SClip laser = new SClip("resources/laser.wav");
     private final SClip background = new SClip("resources/background.wav");
 
     public Window() {
@@ -28,36 +27,7 @@ class Window extends JFrame {
         lTitle.setText("Sonido en java 2021");
         panel.add(lTitle);
 
-        //laser
-        JLabel lLaser = new JLabel();
-        lLaser.setBounds(30, 90, 180, 28);
-        lLaser.setText("Sonido de láser");
-        panel.add(lLaser);
-
-        JButton btPlayLaser = new JButton();
-        btPlayLaser.setBounds(180, 90, 60, 20);
-        btPlayLaser.setText("play");
-        btPlayLaser.setBorder(BorderFactory.createLineBorder(Color.black,1, true));
-        btPlayLaser.setFocusable(false);
-        btPlayLaser.addActionListener((e)->laser.play());
-        panel.add(btPlayLaser);
-
-        JButton btLoopLaser = new JButton();
-        btLoopLaser.setBounds(250, 90, 60, 20);
-        btLoopLaser.setText("loop");
-        btLoopLaser.setBorder(BorderFactory.createLineBorder(Color.black,1, true));
-        btLoopLaser.setFocusable(false);
-        btLoopLaser.addActionListener((e)->laser.loop());
-        panel.add(btLoopLaser);
-
-        JButton btStopLaser = new JButton();
-        btStopLaser.setBounds(320, 90, 60, 20);
-        btStopLaser.setText("stop");
-        btStopLaser.setBorder(BorderFactory.createLineBorder(Color.black,1, true));
-        btStopLaser.setFocusable(false);
-        btStopLaser.addActionListener((e)->laser.stop());
-        panel.add(btStopLaser);
-
+        
         //background
         JLabel lBackground = new JLabel();
         lBackground.setBounds(30, 130, 180, 28);

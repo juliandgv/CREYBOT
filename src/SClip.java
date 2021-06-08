@@ -24,7 +24,7 @@ public class SClip {
         AudioFormat format = audioStream.getFormat();
         var info = new DataLine.Info(Clip.class, format);
 
-        //obtain the Clip
+        //obtain the Clip 
         try {
             audioClip = AudioSystem.getClip();
             audioClip.open(audioStream);
