@@ -41,12 +41,6 @@ public class SClip {
         }){}.start();
     }
 
-    public void loop() {
-        new Thread( () -> {
-            audioClip.setFramePosition(0);
-            audioClip.loop(Clip.LOOP_CONTINUOUSLY);
-        }){}.start();
-    }
 
     public void stop() {
         audioClip.stop();
