@@ -10,6 +10,7 @@ public class Main {
 
 }
 
+
 class Window extends JFrame {
     private final SClip background = new SClip("resources/background.wav");
    
